@@ -1,0 +1,1 @@
+leivisköt=input("Anna leivisköt:")
