@@ -14,15 +14,3 @@ roundedgrams=(total-roundedkilograms*1000)
 
 print("Massa nykymittojen mukaan:")
 print(str(roundedkilograms) +" kilogrammaa "+ "ja "+str(roundedgrams)+ " grammaa")
-
-
-
-
-
-
-
-
-
-
-
-
