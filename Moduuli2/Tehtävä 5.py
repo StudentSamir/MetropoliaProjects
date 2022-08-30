@@ -14,11 +14,12 @@ weight_kilograms=(luodit_sum/1000)
 roundedkilograms = math.floor(weight_kilograms)
 
 roundedgrams=math.floor(luodit_sum)
-grams=float(roundedkilograms+roundedgrams)
+grams=float(roundedgrams)
 print(grams)
 
 print("Massa nykymittojen mukaan:")
 print(str(roundedkilograms) +" kilogrammaa"+" grammaa")
+
 
 
 

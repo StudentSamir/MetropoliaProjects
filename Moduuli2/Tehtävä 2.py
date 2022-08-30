@@ -1,4 +1,4 @@
 import math
-sade=3
-ala=math.pi*sade*sade
+säde=float(input("Anna säde:"))
+ala=math.pi*säde*säde
 print(ala)
