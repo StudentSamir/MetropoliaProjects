@@ -1,24 +1,35 @@
 gender=input("Anna biologinen sukupuolesi:")
+userhemoglobiini= float(input("Anna hemoglobiiniarvosi:"))
 
 gender_nainen=str("nainen")
 gender_mies = str("mies")
 
-if (gender==gender_nainen and not gender==gender_mies):
-    hemoglobiiniarvo1 = float(input("Anna hemoglobiininiarvosi(g/l):"))
-
-if (gender == gender_mies and not gender == gender_nainen):
-    hemoglobiiniarvo2 = float(input("Anna hemoglobiininiarvosi(g/l):"))
-
-elif 117 <=hemoglobiiniarvo1<=175:
+if   (gender==gender_nainen  and 117 <=userhemoglobiini<=175):
     print("Hemogboliiniarvosi on normaali.")
-elif 117>hemoglobiiniarvo1:
+elif (gender==gender_nainen  and 117 > userhemoglobiini):
     print("Hemogboniiniarvosi on alhainen.")
-elif 175<hemoglobiiniarvo1:
+elif (gender==gender_nainen  and 175 < userhemoglobiini):
     print("Hemogboliiniarvosi on korkea.")
 
-elif 134 <=hemoglobiiniarvo2<=195:
+elif (gender==gender_mies    and 134 <= userhemoglobiini <= 195):
     print("Hemogboliiniarvosi on normaali.")
-elif 134>hemoglobiiniarvo2:
+elif (gender==gender_mies    and 134 > userhemoglobiini):
     print("Hemogboniiniarvosi on alhainen.")
-elif 195<hemoglobiiniarvo2:
+elif (gender==gender_mies    and 195 < userhemoglobiini):
     print("Hemogboliiniarvosi on korkea.")
+else:
+    print("Error")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
