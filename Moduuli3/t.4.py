@@ -1,9 +1,9 @@
 year=int(input("Anna vuosiluku:"))
 
 if   year % 4==0   and year % 100!= 0:
-        print("Karkausvuosi")
+        print("Vuosi "+str(year)+ " on karkausvuosi.")
 elif year % 100==0 and year % 400==0:
-        print("karkausvuosi")
+        print("Vuosi "+str(year)+ " on karkausvuosi.")
 else:
-        print("Error")
+        print("Vuosi "+str(year)+" ei ole karkausvuosi.")
 
