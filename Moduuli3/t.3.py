@@ -19,17 +19,3 @@ elif (gender==gender_mies    and 195 < userhemoglobiini):
     print("Hemogboliiniarvosi on korkea.")
 else:
     print("Error")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
