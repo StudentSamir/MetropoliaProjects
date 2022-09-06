@@ -1,6 +1,9 @@
 number=str(input("Anna lukuarvo:"))
-maximum = (min (number))
-minimum = (max (number))
+
+mini=maxi= input ("Anna lukuarvo:")
+
+maximum = min (number)
+minimum = max (number)
 
 while number != (""):
     print("Enter new number:")
