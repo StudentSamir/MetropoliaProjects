@@ -1,10 +1,9 @@
 number=str(input("Anna lukuarvo:"))
 
-maximum = min (number)
-minimum = max (number)
+maximum_value = min (number)
+minimum_value = max (number)
 
 while number != (""):
-    print("Enter new number:")
     number = str(input("Anna lukuarvo:"))
 
-print("Pienin luku on "+str(maximum)+" ja"+" suurin luku on "+str(minimum)+"!")
+print("Pienin luku on "+str(maximum_value)+" ja"+" suurin luku on "+str(minimum_value)+"!")
