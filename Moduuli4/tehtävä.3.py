@@ -1,18 +1,8 @@
-number=str(input("Anna lukuarvo:"))
+number=str[input("Anna lukuarvo:")]
 
-smallest=str(0)
-largest=str(0)
-
-while number != "":
-    print("Enter new number")
-
-     if number != '':
-
-        number = str(input("Anna lukuarvo:"))
-         if number>largest:
-            largest = number
-         if number<smallest:
-            smallest= number
-
-print(str(smallest)+ str(largest))
-
+maximum= (min(number))
+minimum= (max(number))
+while number != (""):
+    print("Enter new number:")
+    number = str(input("Anna lukuarvo:"))
+print("Pienin luku on "+str(maximum)+" ja"+" suurin luku on "+str(minimum)+"!")
