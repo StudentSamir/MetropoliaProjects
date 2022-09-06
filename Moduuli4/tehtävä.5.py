@@ -13,9 +13,3 @@ while   user!=str("python") and password!= str("rules"):
 
 if user == str("python") and password == str("rules"):
     print("Tervetuloa!")
-
-
-
-
-
-
