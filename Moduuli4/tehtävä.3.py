@@ -1,7 +1,5 @@
 number=str(input("Anna lukuarvo:"))
 
-mini=maxi= input ("Anna lukuarvo:")
-
 maximum = min (number)
 minimum = max (number)
 
