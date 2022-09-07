@@ -1,8 +1,8 @@
 import random
 
-arpakuutio= int(input("Syötä arpakuutioiden lukumäärä:"))
-
 arpakuutiot = []
+
+arpakuutio= int(input("Syötä arpakuutioiden lukumäärä:"))
 
 for n in range(arpakuutio):
 
