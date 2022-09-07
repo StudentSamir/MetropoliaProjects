@@ -11,4 +11,5 @@ for n in numbers_string:
     numbers_int.append(int(n))
 
 numbers_int.sort(reverse=True)
-print("Viisi suurinta lukua ovat:"+str(numbers_int[0])+str(numbers_int[-1]))
+print("Viisi suurinta lukua ovat:"+str(numbers_int[0:5]))
+
