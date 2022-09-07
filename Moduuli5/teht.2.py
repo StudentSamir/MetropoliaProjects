@@ -1,5 +1,4 @@
 numbers_string = []
-numbers_int = []
 
 number = input("Anna lukuarvo:")
 
@@ -7,9 +6,7 @@ while number!="":
     numbers_string.append(number)
     number = input("Anna lukuarvo:")
 
-for n in numbers_string:
-    numbers_int.append(int(n))
 
-numbers_int.sort(reverse=True)
-print("Viisi suurinta lukua ovat:"+str(numbers_int[0:5]))
+numbers_string.sort(reverse=True)
+print("Viisi suurinta lukua ovat:"+str(numbers_string[0:5]))
 
