@@ -11,4 +11,4 @@ for n in numbers_string:
     numbers_int.append(int(n))
 
 numbers_int.sort(reverse=True)
-print((" Suurin luku on ")+str(numbers_int[0])+(" ja pienin luku on ")+str(numbers_int[-1])+("!"))
+print(("Suurin luku on ")+str(numbers_int[0])+(" ja pienin luku on ")+str(numbers_int[-1])+("!"))
