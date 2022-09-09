@@ -1,9 +1,9 @@
-usergallons=float(input("Anna lukuarvo:"))
-def convertor():
-    return(3.79*gallons)
+def convertor(usergallons):
+    liters= (3.7854 * usergallons)
+    return liters
 
-while gallons >= 0:
-    galloona = convertor()
-    print(str(gallons)+ " galloonaa on litroina "+ str(galloona)+ "l")
-    gallons = float(input("Anna lukuarvo:"))
-print("Ohjelma pysäytetty!")
+usergallons = float(input("Anna lukuarvo:"))
+while usergallons>=0:
+    print(str(usergallons)+ " galloona on litroina "+str(convertor(usergallons))+"l" )
+    usergallons = float(input("Anna lukuarvo:"))
+print("Error!")
