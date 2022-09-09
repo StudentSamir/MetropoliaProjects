@@ -1,4 +1,4 @@
-gallons=float(input("Anna lukuarvo:"))
+usergallons=float(input("Anna lukuarvo:"))
 def convertor():
     return(3.79*gallons)
 
