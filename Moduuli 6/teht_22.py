@@ -10,4 +10,3 @@ while noppa!= sides:
 
     noppa=throw_dice()
     print(noppa)
-
