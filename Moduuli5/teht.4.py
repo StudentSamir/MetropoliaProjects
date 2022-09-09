@@ -8,4 +8,3 @@ while kaupungit!=(""):
 
 for n in kaupungit_list:
     print (n)
-
