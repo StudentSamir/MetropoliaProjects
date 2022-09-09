@@ -1,7 +1,7 @@
 
 def calculator(numbers_int):
-    sum_x =(numbers_int)
-    return sum_x
+    list_x =(numbers_int)
+    return list_x
 
 numbers_string = []
 numbers_int = []
