@@ -3,7 +3,6 @@ def calculator(numbers_int):
     sum_x = sum(numbers_int)
     return sum_x
 
-
 numbers_string = []
 numbers_int = []
 
@@ -15,5 +14,5 @@ while number != (""):
 for n in numbers_string:
     numbers_int.append(int(n))
 
-print("Summa on "+str(calculator(numbers_int)))
+print("Summa on "+str(calculator(numbers_int))+"!")
 
