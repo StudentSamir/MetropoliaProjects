@@ -10,7 +10,7 @@ while nimi !=(""):
     if nimi in nimet:
         print("Aiemmin syotetty nimi!")
 
-    else:
+    if nimi not in nimet:
         nimet.add(nimi)
         print("Uusi nimi!")
 
