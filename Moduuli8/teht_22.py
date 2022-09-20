@@ -37,3 +37,6 @@ for tyyppi in tyypit:
     lkm = haekenttienLKM(maakoodi,tyyppi[0])
     print(f'{tyyppi [0]} lukumäärä ', lkm)
 
+
+
+
