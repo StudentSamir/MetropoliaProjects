@@ -12,7 +12,7 @@ yhteys = mysql.connector.connect(
         )
 
 def airport_distance(icao):
-    sql = "SELECT latitude_deg, longitude_deg FROM airport WHERE ident ='" + icao + "'"
+    sql = "select latitude_deg, longitude_deg from airport where ident = '" + icao + "'"
     cursor = yhteys.cursor()
     cursor.execute(sql)
     tulos = cursor.fetchall()
