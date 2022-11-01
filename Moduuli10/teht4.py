@@ -70,13 +70,3 @@ class Kilpailu:
         print(taulukko2)
 
 kilpailu3= Kilpailu("Suuri romuralli",8000, 10)
-
-
-
-
-
-
-
-
-
-
