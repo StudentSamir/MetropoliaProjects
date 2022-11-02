@@ -38,7 +38,7 @@ class Kilpailu:
 
     def tunti_kuluu(self):
 
-        for auto in self.autolista:
+        for auto in autot:
             auto.kiihtyvyys(randint(-10, 15))
             auto.kulje(1)
 
@@ -52,14 +52,20 @@ class Kilpailu:
         print(taulukko2)
 
 
-kilpailu2 = True
 
-while kilpailu2:
-    for auto in autot:
-        auto.kiihtyvyys(randint(-10, 15))
-        auto.kulje(1)
-        if auto.kuljettu_matka > 8000:
-            kilpailu2 = False
 
 kilpailu22= Kilpailu("Suuri romuralli",8000, 10)
 kilpailu22.tulosta_tilanne()
+
+kilpailu2 = True
+
+tunnit = 10
+while kilpailu2:
+    kilpailu22.tunti_kuluu()
+    if auto.kuljettu_matka > 8000:
+        kilpailu22.tulosta_tilanne()
+        kilpailu2 = False
+    if tunnit == 10:
+        tunnit = 0
+        kilpailu22.tulosta_tilanne()
+    tunnit += 1
