@@ -22,10 +22,10 @@ class Auto:
 
 
 
-autot = []
+autolista = []
 for k in range (1,10):
     auto = Auto(f"ABC-{k + 1}",randint(100, 200))
-    autot.append(auto)
+    autolista.append(auto)
 
 
 class Kilpailu:
@@ -37,18 +37,19 @@ class Kilpailu:
 
     def tunti_kuluu(self):
 
-        for auto in autot:
+        for auto in autolista:
             auto.kiihtyvyys(randint(-10, 15))
             auto.kulje(1)
 
     def tulosta_tilanne(self):
 
         taulukko2 = []
-        for auto in autot:
+        for auto in autolista:
             taulukko2.append([auto.rekisteritunnus, auto.huippunopeus,auto.nopeus, auto.kuljettu_matka])
 
         taulukko2.sort(key=lambda k: k[1], reverse=True)
         print(taulukko2)
+
 
 
 kilpailu22= Kilpailu("Suuri romuralli",8000, 10)
@@ -67,3 +68,4 @@ while kilpailu2:
         tunnit = 0
         kilpailu22.tulosta_tilanne()
     tunnit += 1
+kilpailu2 = False
