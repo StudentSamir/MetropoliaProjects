@@ -30,7 +30,6 @@ for k in range (1,10):
 
 class Kilpailu:
 
-
     def __init__(self,kilpailu_nimi, pituus_km, autolista):
             self.kilpailu_nimi = kilpailu_nimi
             self.pituus_km = pituus_km
@@ -52,10 +51,9 @@ class Kilpailu:
         print(taulukko2)
 
 
-
-
 kilpailu22= Kilpailu("Suuri romuralli",8000, 10)
 kilpailu22.tulosta_tilanne()
+
 
 kilpailu2 = True
 
