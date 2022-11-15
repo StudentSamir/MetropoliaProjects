@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<ul id="target"></ul>
+
+<script defer>
+
+    'use scrict';
+
+    const koirat = []
+
+    for (let i = 0; i < 6; i++) {
+        koirat.push(prompt(`Syötä ${i+1}. koiran nimi`));
+    }
+
+
+    koirat.sort();
+    koirat.reverse();
+
+
+    for (let koira of koirat) {
+        document.getElementById('target').innerHTML += `<li> ${koira}</li>`;
+    }
+
+</script>
+
+</body>
+</html>

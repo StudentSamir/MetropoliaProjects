@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+
+<ol id="target"></ol>
+
+<script defer>
+
+
+    'use strict';
+
+    const number_of_participants = parseInt(prompt('How many participants?'));
+
+    let participants = [];
+
+    for (let i = 1; i <= number_of_participants; i++) {
+        let name = prompt('Enter the names of participants');
+        participants.push(name);
+    }
+
+     for (let name of participants) {
+        document.getElementById('target').innerHTML += `<li> ${name}</li>`;
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="target"></ul>
+
+<script defer>
+
+    'use strict'
+
+    let number;
+    let numbers = []
+    //
+    do {
+        number = parseFloat(prompt('Enter a number'));
+        numbers.push(number);
+
+    } while (numbers.includes(number));
+
+    console.log(numbers);
+</script>
+</body>
