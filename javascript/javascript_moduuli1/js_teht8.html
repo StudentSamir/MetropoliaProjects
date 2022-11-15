@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+<ul id="target"></ul>
+
+<script defer>
+    'use strict';
+
+    const start = prompt('Enter the start year!');
+    const end = prompt('Enter the end year!');
+
+    for (let i = start; i <= end; i++) {
+        if (i % 100 === 0 ? i % 400 === 0 : i % 4 === 0) {
+            document.querySelector('#target').innerHTML += `<li> ${i}</li>`;
+        }
+    }
+
+</script>
+
+</body>
+</html>

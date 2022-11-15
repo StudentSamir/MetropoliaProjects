@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<p id="target"></p>
+
+<script defer>
+    'use strict';
+
+    const year = prompt('Enter a year!');
+
+    if (year % 100 === 0 ? year % 400 === 0 : year % 4 === 0) {
+        document.querySelector('#target').innerHTML = ('A leap year!');
+
+    } else {
+        document.querySelector('#target').innerHTML = ('Not a leap year!');
+
+    }
+
+</script>
+
+</body>
+</html>

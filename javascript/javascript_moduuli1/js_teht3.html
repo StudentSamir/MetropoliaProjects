@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+
+<p id="target"></p>
+
+<script defer>
+
+    'use strict';
+
+    let integer_sum
+    let integer_product
+    let integer_average
+
+    const integer1 = parseInt(prompt('Enter a integer:'));
+    const integer2 = parseInt(prompt('Enter a integer:'));
+    const integer3 = parseInt(prompt('Enter a integer:'));
+
+    integer_sum = integer1 + integer2 + integer3;
+    integer_product = (integer1 * integer2 * integer3);
+    integer_average = (integer1 * integer2 * integer3) / 3;
+
+    document.querySelector('#target').innerHTML = (`Sum: ${integer_sum} Product: ${integer_product} Average: ${integer_average}`);
+
+</script>
+</body>
+</html>

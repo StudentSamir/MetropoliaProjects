@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<p id="target"></p>
+
+<script defer>
+
+    const number_of_dicerolls = parseInt(prompt('Number of dice rolls:'));
+    let sum = []
+
+    for (let i = 1; i <= number_of_dicerolls; i++) {
+        let diceroll = Math.floor(Math.random() * 6 + 1)
+        sum.push(diceroll)
+
+    }
+    document.querySelector('#target').innerHTML +=  (`Sum: ${sum}`)
+
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<p id="target"></p>
+
+<script defer>
+
+    'use strict';
+
+    let draw;
+    const name = prompt('What is your name?');
+    draw = Math.floor(Math.random(1, 5) * 5);
+
+
+    if (draw === 1) {
+        document.querySelector('#target').innerHTML = (name + ',you are Gryffindor.');
+
+    } else if (draw === 2) {
+        document.querySelector('#target').innerHTML = (name + ',you are Slytherin.');
+
+    } else if (draw === 3) {
+        document.querySelector('#target').innerHTML = (name + ',you are Daredevil.');
+
+    } else if (draw === 4) {
+
+        document.querySelector('#target').innerHTML = (name + ',you are Ravenclaw');
+
+    }
+
+
+</script>
+
+</body>
+</html>
