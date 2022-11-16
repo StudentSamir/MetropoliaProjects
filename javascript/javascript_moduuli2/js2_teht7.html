@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<ul id="target"></ul>
+
+<script defer>
+
+    'use strict';
+
+    function diceroll(sides) {
+        return Math.floor(Math.random() * sides + 1);
+    }
+
+    diceroll();
+
+    const number = parseInt(prompt('How many sides?'));
+    let dice;
+    let dicerolls = []
+
+    do {
+        dice = Math.floor(Math.random() * number + 1);
+        dicerolls.push(dice);
+
+    } while (dice !== number);
+
+    document.querySelector('#target').innerHTML += `<li> ${dicerolls}</li>`;
+
+</script>
+
+</body>
+</html>
