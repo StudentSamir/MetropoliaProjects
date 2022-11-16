@@ -17,12 +17,12 @@
 
     let participants = [];
 
-    for (let i = 1; i <= number_of_participants; i++) {
+    for (let i = 0; i <= number_of_participants; i++) {
         let name = prompt('Enter the names of participants');
         participants.push(name);
     }
 
-     for (let name of participants) {
+    for (let name of participants) {
         document.getElementById('target').innerHTML += `<li> ${name}</li>`;
     }
 
