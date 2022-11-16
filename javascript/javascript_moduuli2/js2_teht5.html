@@ -13,13 +13,16 @@
 
     let number;
     let numbers = []
-    //
+
     do {
         number = parseFloat(prompt('Enter a number'));
         numbers.push(number);
 
     } while (numbers.includes(number));
 
+    numbers.sort((a, b) => a - b);
+    numbers.reverse();
     console.log(numbers);
+
 </script>
 </body>
