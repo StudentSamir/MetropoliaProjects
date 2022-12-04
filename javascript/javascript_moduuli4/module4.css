@@ -1,0 +1,59 @@
+
+html {
+ font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ background-color: whitesmoke;
+}
+
+.container {
+ width: 75rem;
+ margin: auto;
+}
+
+header {
+ background-color: #c71530;
+ padding: 1.5rem;
+ color: #fff;
+ text-align: center;
+}
+
+main {
+ background-color: #fff;
+ padding: 3rem;
+}
+
+section {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ gap: 1rem;
+}
+
+
+article {
+ width: calc(100% /2 - 2rem);
+ box-sizing: border-box;
+ cursor: pointer;
+ border: 1px #ccc solid;
+ padding: 1rem;
+ border-radius: 6px;
+ box-shadow: 3px 6px 6px #ccc;
+ transition: all 0.2s ease-in-out;
+}
+
+figure {
+ margin: 0;
+ text-align: center;
+}
+
+figure img {
+ width: 100%;
+}
+
+figcaption {
+ text-align: center;
+}
