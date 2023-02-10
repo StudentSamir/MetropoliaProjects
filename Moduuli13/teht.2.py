@@ -25,3 +25,4 @@ def get_data(icao_code):
 
 if __name__ == '__main__':
     app.run(use_reloader=True, host='localhost', port=3000)
+
