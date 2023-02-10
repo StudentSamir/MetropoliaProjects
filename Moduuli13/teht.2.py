@@ -1,33 +1,27 @@
-from flask import Flask
 import mysql.connector
-def database(icao):
-    yhteys = mysql.connector.connect(
-    host='127.0.0.1',
-    port=3306,
-    database='flight_game',
-    user='root',
-    password='ronaldo',
-    autocommit=True)
+from flask import Flask
 
-    tuple = (icao,)
-    sql = '''SELECT name, municipality FROM airport
-    WHERE ident = %s'''
-    kursori = yhteys.cursor()
-    kursori.execute(sql, tuple)
-    tulos = kursori.fetchone()
-    return tulos
+connection = mysql.connector.connect(host='localhost', port=3306, database='flight_game', user='root',
+                                     password='ronaldo', autocommit=True)
 
 app = Flask(__name__)
 
-@app.route('/kentta/<icao>')
-def kentta(icao):
-    database(icao)
+
+@app.route('/airport/<icao_code>')
+def get_data(icao_code):
+    sql_code = "SELECT name, municipality FROM airport WHERE ident = '" + icao_code + "'"
+    cursor_test = connection.cursor()
+    cursor_test.execute(sql_code)
+    sql_print = cursor_test.fetchall()
 
     answer = {
-        "ICAO": icao, "Name": database(icao)[0], "municipality": database(icao)[1]
+        "ICAO": icao_code,
+        "Name": sql_print[0][0],
+        "Municipality": sql_print[0][1]
     }
 
     return answer
 
+
 if __name__ == '__main__':
-    app.run(use_reloader=True, host='127.0.0.1', port=3000)
+    app.run(use_reloader=True, host='localhost', port=3000)
