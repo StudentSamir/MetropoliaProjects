@@ -1,7 +1,7 @@
 import requests
 from geopy.geocoders import Nominatim
 
-APIKEY = "9e1607e90178ab1be01ba6893f20967c"
+APIKEY = ""
 user_location = input(" Enter your location: ")
 
 geolocator = Nominatim(user_agent = "api", timeout = 3)
